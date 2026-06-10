@@ -19,10 +19,19 @@ def inject_custom_css() -> None:
         """
         <style>
         /* Main background sa application */
-        .stApp {
-            background: linear-gradient(180deg, #0b1220 0%, #0f172a 100%);
-            color: #e2e8f0;
+        .stApp,
+            [data-testid="stAppViewContainer"] {
+                background: linear-gradient(180deg, #0b1220 0%, #0f172a 100%) !important;
+                color: #e2e8f0;
+            }
+
+            [data-testid="stHeader"] {
+            background: transparent !important;
         }
+
+.main {
+    background: transparent !important;
+}
 
         /* Main container sa page */
         .block-container {
@@ -213,7 +222,7 @@ def render_bulk_table(
     )
 
     # I-display ang table.
-    st.dataframe(df, use_container_width=True)
+    st.dataframe(df, width="stretch")
 
     # Ibalik ang DataFrame aron magamit pa sa ubang functions.
     return df
