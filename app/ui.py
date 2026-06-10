@@ -20,14 +20,23 @@ def inject_custom_css() -> None:
         <style>
         /* Main background sa application */
         .stApp,
-            [data-testid="stAppViewContainer"] {
-                background: linear-gradient(180deg, #0b1220 0%, #0f172a 100%) !important;
-                color: #e2e8f0;
-            }
-
-            [data-testid="stHeader"] {
-            background: transparent !important;
+        [data-testid="stAppViewContainer"] {
+            background: linear-gradient(180deg, #0b1220 0%, #0f172a 100%) !important;
+            color: #e2e8f0;
         }
+
+        [data-testid="stSidebar"],
+        [data-testid="stSidebarContent"] {
+            background: #0b1220 !important;
+        }
+
+        [data-testid="stSidebar"] * {
+            color: #e2e8f0 !important;
+        }
+
+[data-testid="stHeader"] {
+    background: transparent !important;
+}
 
 .main {
     background: transparent !important;
