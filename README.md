@@ -256,21 +256,6 @@ The app will return a prediction table and allow CSV export.
 
 ---
 
-## Why This Project Is Good for a Portfolio
-
-This project demonstrates real-world AI engineering skills:
-
-- end-to-end NLP pipeline design
-- clean multi-file code organization
-- ML model comparison
-- production-style inference flow
-- explainability with keyword influence
-- deployable Streamlit user interface
-
-It shows that you understand how to build practical AI systems **without depending on LLM APIs or pretrained transformers**.
-
----
-
 ## Improvement Ideas
 
 To make this even stronger for a portfolio:
